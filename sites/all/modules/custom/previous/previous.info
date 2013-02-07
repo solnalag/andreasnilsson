@@ -1,0 +1,5 @@
+name = Previous
+description = Creates a link to the previous node.
+
+core = 7.x
+files[] = previous_node.module

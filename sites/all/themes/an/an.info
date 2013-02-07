@@ -1,0 +1,6 @@
+name = AN
+description = Subtheme of simpleclen for AndreasNilsson.org.
+base theme = simpleclean
+core = 7.x
+
+stylesheets[all][] = css/an.css

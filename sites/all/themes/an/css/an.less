@@ -1,0 +1,348 @@
+@import url(http://fonts.googleapis.com/css?family=Wire+One);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento:700);
+
+// Less
+.rounded-corners(@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+@titlelink: #008b8b;
+@light: #fff;
+@dark: #444444;
+
+// Basic
+body {
+  background-color: none;
+  background: url('../images/light_wool.png') repeat scroll; //cycle
+  font-family: 'Quattrocento', serif;
+}
+
+#logo img {
+  width: 250px;
+}
+
+//Text
+h1,
+h2,
+h3 {
+  font-family: 'Wire One', sans-serif;
+  color: @titlelink;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+a,
+li a.active {
+  color: @titlelink;
+
+  &:hover {
+    color: @dark;
+  }
+}
+
+#header {
+
+  .block-twitter-db {
+    float: right;
+    width: 600px;
+    padding: 20px 20px 0;
+    margin-top: 25px;
+    background: url('../images/twitter-c-64.png') no-repeat 0 6px;
+
+    .tweets {
+      padding-left: 50px;
+    }
+
+    ul {
+      height: 79px;
+
+      .created {
+        font-family: 'Wire One', sans-serif;
+        font-size: 20px;
+        color: @titlelink;
+      }
+    }
+  }
+}
+
+#sidebar {
+  a,
+  li a.active {
+    color: @titlelink;
+
+    &:hover {
+      color: @light;
+    }
+  }
+}
+
+// Main menu
+#nav #main-menu-links li a {
+  background: @dark;
+  .rounded-corners();
+  color: @light;
+
+  &:hover,
+  &.active {
+    background: @titlelink;
+  }
+}
+
+// Content region
+#content {
+  background: @light;
+  .rounded-corners();
+  padding: 30px;
+  border: 1px solid @dark;
+}
+
+// Sidebar region
+#sidebar .block {
+  background: @dark;
+  margin-top: 0;
+  margin-bottom: 25px;
+  border: 1px solid @dark;
+
+  p {
+    color: @light;
+  }
+}
+
+#sidebar .block-previous {
+  
+  h3 {
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &:hover {
+    background: @light;
+    border: 1px solid @dark;
+  }
+}
+
+// Search block sidebar
+#sidebar {
+
+  #block-search-form {
+    padding: 0;
+    padding-left: 20px;
+
+    .form-item {
+
+      .form-text {
+        height: 35px;
+        border: none;
+        background: @dark;
+        font-size: 15px;
+        color: #fff;
+        font-family: 'Quattrocento',serif;
+        width: 180px;
+      }
+    }
+
+    #edit-actions,
+    .form-actions {
+
+      .form-submit {
+        padding: 0;
+        background: @dark;
+        font-family: 'Wire One',sans-serif;
+        font-size: 25px;
+        color: @titlelink;
+
+        &:hover {
+          color: @light;
+        }
+      }
+    }
+  }
+}
+
+// Search node form,
+// Login form
+.content {
+
+  #search-form,
+  #user-login {
+
+    .form-item {
+
+      #edit-keys,
+      #edit-name,
+      #edit-pass {
+        background: @dark;
+        color: @light;
+      }
+    }
+
+    #edit-submit {
+      background: @dark;
+      color: @light;
+
+      &:hover {
+        background: @titlelink;
+      }
+    }
+  }
+
+  .search-results {
+
+    .title {
+      font-size: 1.8em;
+    }
+
+    .search-snippet-info strong{
+      color: @titlelink;
+    }
+  }
+}
+
+// Status messages
+#content {
+
+  .error,
+  div.error,
+  .messages,
+  div.messages {
+    border: none;
+    background-color: @dark;
+    color: @light;
+
+    a:hover {
+      color: @light;
+    }
+  }
+}
+
+// Tabs
+#content .tabs a {
+  color: @light;
+}
+
+ul.primary {
+  border-color: @dark;
+
+  li a {
+    background-color: @dark;
+    border-color: @dark;
+
+    &:hover,
+    &.active {
+      background: @titlelink;
+      border-color: @titlelink;
+    }
+  }
+}
+
+//Taxonomy tags
+.field-name-field-tags .field-item a {
+  background: @dark;
+
+  &:hover {
+    background: @titlelink;
+
+    :before {
+      border-color: transparent @titlelink transparent transparent;
+    }
+  }
+}
+
+.field-name-field-tags .field-item a:before {
+  border-color: transparent @dark transparent transparent;
+}
+
+// Rss feed
+//a.feed-icon:hover {
+  //background-image: url('../images/feed-hover.png');
+//}
+
+// Frontpage
+.view-frontpage {
+
+  .views-row {
+    border-bottom: 1px solid @dark;
+  }
+
+  .views-row-last {
+    border-bottom: none;
+  }
+}
+
+//Comments
+#content {
+
+  div.comment {
+    border-top: 1px solid @dark;
+
+    .comment-delete,
+    .comment-edit,
+    .comment-reply {
+
+      a {
+        background-color: @dark;
+        color: @light;
+
+        &:hover {
+          background-color: @titlelink;
+        }
+      }
+    }
+  }
+  
+  #edit-subject,
+  #edit-comment,
+  .form-textarea {
+    background-color: @dark;
+    color: @light;
+  }
+
+  #edit-submit,
+  #edit-preview {
+    background-color: @dark;
+    color: @light;
+
+    &:hover {
+      background-color: @titlelink;
+    }
+  }
+}
+
+//Footer
+#footer-wrap {
+  margin-top: 25px;
+  padding: 30px;
+  border: none;
+  background: @dark;
+  .rounded-corners();
+
+  .block-twitter-db {
+    background: url('../images/twitter-a-128.png') no-repeat 0 0;
+    padding-left: 128px;
+    height: 128px;
+
+    h2 {
+      padding-top: 20px;
+    }
+  }
+}

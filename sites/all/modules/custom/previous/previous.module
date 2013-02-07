@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * @file
+ * 
+ */
+
+function previous_get_node($nid) {
+  
+  if ($nid) {
+  
+    $query = "SELECT nid FROM {node} WHERE nid < :nid ORDER BY nid DESC LIMIT 1";
+
+    $result = db_query($query, array(':nid' => $nid));
+
+    $previous_nid = NULL;
+
+    foreach ($result as $record) {
+      $previous_nid = $record->nid;
+    }
+
+    if ($previous_nid) {
+
+      $previous_node = node_load($previous_nid);
+
+      return theme('previous', array('previous_node' => $previous_node));
+    }
+  }
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function previous_block_info() {
+  
+  $block[0]['info'] = t('Previous');
+  
+  return $block;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function previous_block_view($delta) {
+  
+  $nid = arg(1);
+  
+  $block['subject'] = t('Previous page');
+  $block['content'] = previous_get_node($nid);
+  return $block;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function previous_theme($existing, $type, $theme, $path) {
+  $path = drupal_get_path('module', 'previous') . '/templates';
+  return array(
+    'previous' => array(
+      'template' => 'previous',
+      'path' => $path,
+      'variables' => array(
+        'previous_node' => NULL,
+      ),
+    ),
+  );
+}
