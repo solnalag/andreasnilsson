@@ -78,16 +78,16 @@ li a.active {
   }
 }
 
-#sidebar {
+/*#sidebar {
   a,
   li a.active {
     color: @titlelink;
 
     &:hover {
-      color: @light;
+      color: @dark;
     }
   }
-}
+}*/
 
 // Main menu
 #nav #main-menu-links li a {
@@ -110,50 +110,54 @@ li a.active {
 }
 
 // Sidebar region
-#sidebar .block {
-  background: @dark;
-  margin-top: 0;
-  margin-bottom: 25px;
-  border: 1px solid @dark;
+#sidebar {
 
-  p {
-    color: @light;
-  }
-}
+  // Default block style
+  .block {
+    background: @light;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border: 1px solid @dark;
 
-#sidebar #block-views-instagrams-block-1 {
-  background: none;
-  padding: 0;
-  border: none;
-  
-  img {
-    .rounded-corners();
-  }
-}
-
-#sidebar .block-previous {
-  
-  h3 {
-    margin: 0;
-  }
-
-  a {
-    text-decoration: none;
-
-    &:hover {
-      color: inherit;
+    p {
+      color: @light;
     }
   }
 
-  &:hover {
-    background: @light;
-    border: 1px solid @dark;
+  // Instagram block style
+  #block-views-instagrams-block-1,
+  .tv-matchen {
+    background: none;
+    padding: 0;
+    border: none;
   }
-}
 
-// Search block sidebar
-#sidebar {
+  #block-views-instagrams-block-1 img {
+    .rounded-corners()
+  }
 
+  // Previous-node block style
+  .block-previous {
+  
+    h3 {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        //color: inherit;
+      }
+    }
+
+    &:hover {
+      //background: @light;
+      //border: 1px solid @dark;
+    }
+  }
+
+  // Search block style
   #block-search-form {
     padding: 0;
     padding-left: 20px;
@@ -163,9 +167,9 @@ li a.active {
       .form-text {
         height: 35px;
         border: none;
-        background: @dark;
-        font-size: 15px;
-        color: #fff;
+        //background: @dark;
+        font-size: 18px;
+        color: @dark;
         font-family: 'Quattrocento',serif;
         width: 180px;
       }
@@ -176,18 +180,28 @@ li a.active {
 
       .form-submit {
         padding: 0;
-        background: @dark;
+        background: none; //@dark;
         font-family: 'Wire One',sans-serif;
         font-size: 25px;
         color: @titlelink;
 
         &:hover {
-          color: @light;
+          color: @dark;
         }
       }
     }
   }
 }
+
+/*#sidebar 
+
+#sidebar 
+
+// Search block sidebar
+#sidebar {
+
+  
+}*/
 
 // Search node form,
 // Login form
@@ -343,7 +357,7 @@ ul.primary {
   margin-top: 25px;
   padding: 30px;
   border: none;
-  background: @dark;
+  background: none;//@light;
   .rounded-corners();
 
   .block-twitter-db {
