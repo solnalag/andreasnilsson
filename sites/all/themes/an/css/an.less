@@ -12,6 +12,7 @@
 @titlelink: #008b8b;
 @light: #fff;
 @dark: #444444;
+@border: #ccc;
 
 // Basic
 body {
@@ -106,7 +107,7 @@ li a.active {
   background: @light;
   .rounded-corners();
   padding: 30px;
-  border: 1px solid @dark;
+  border: 1px solid @border;
 }
 
 // Sidebar region
@@ -117,7 +118,7 @@ li a.active {
     background: @light;
     margin-top: 0;
     margin-bottom: 25px;
-    border: 1px solid @dark;
+    border: 1px solid @border;
 
     p {
       color: @light;
@@ -125,15 +126,20 @@ li a.active {
   }
 
   // Instagram block style
-  #block-views-instagrams-block-1,
-  .tv-matchen {
+  #block-views-instagrams-block-1 {
     background: none;
     padding: 0;
     border: none;
+
+    img {
+      .rounded-corners();
+    }
   }
 
-  #block-views-instagrams-block-1 img {
-    .rounded-corners()
+  // Tv-matchen block style
+  .tv-matchen {
+    background: none;
+    padding: 0;
   }
 
   // Previous-node block style
@@ -153,7 +159,7 @@ li a.active {
 
     &:hover {
       //background: @light;
-      //border: 1px solid @dark;
+      //border: 1px solid @border;
     }
   }
 
@@ -305,7 +311,7 @@ ul.primary {
 .view-frontpage {
 
   .views-row {
-    border-bottom: 1px solid @dark;
+    border-bottom: 1px solid @border;
   }
 
   .views-row-last {
@@ -317,7 +323,7 @@ ul.primary {
 #content {
 
   div.comment {
-    border-top: 1px solid @dark;
+    border-top: 1px solid @border;
 
     .comment-delete,
     .comment-edit,
