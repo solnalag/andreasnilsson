@@ -1,0 +1,21 @@
+diff --git a/drupagram_views_field_handlers.inc b/drupagram_views_field_handlers.inc
+index 65ce716..25e546a 100644
+--- a/drupagram_views_field_handlers.inc
++++ b/drupagram_views_field_handlers.inc
+@@ -221,12 +221,14 @@
+         $picture = drupagram_local_image($images['standard_resolution']['url']);
+         $picture_filepath = $picture->uri;
+         if (file_valid_uri($picture_filepath)) {
+-          $output = theme('image_style', array('style_name' => $this->options['image_style'], 'path' => $picture_filepath));
++          $image = theme('image_style', array('style_name' => $this->options['image_style'], 'path' => $picture_filepath));
+         }
+       }
+     }
+-
+-    $image = theme('image', array('path' => $images[$source]['url']));
++    else {
++      $image = theme('image', array('path' => $images[$source]['url']));
++    }
+     if ($this->options['link_to_post'] && isset($values->drupagram_link) && !empty($values->drupagram_link)) {
+       return l($image, $values->drupagram_link, array('html' => TRUE, 'attributes' => array('target' => '_blank', 'rel' => 'nofollow')));
+     }

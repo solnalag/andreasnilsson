@@ -221,12 +221,16 @@ class drupagram_views_handler_field_images extends views_handler_field {
         $picture = drupagram_local_image($images['standard_resolution']['url']);
         $picture_filepath = $picture->uri;
         if (file_valid_uri($picture_filepath)) {
-          $output = theme('image_style', array('style_name' => $this->options['image_style'], 'path' => $picture_filepath));
+          //$output = theme('image_style', array('style_name' => $this->options['image_style'], 'path' => $picture_filepath));
+          $image = theme('image_style', array('style_name' => $this->options['image_style'], 'path' => $picture_filepath));
         }
       }
     }
 
-    $image = theme('image', array('path' => $images[$source]['url']));
+    //$image = theme('image', array('path' => $images[$source]['url']));
+    else {
+      $image = theme('image', array('path' => $images[$source]['url']));
+    }
     if ($this->options['link_to_post'] && isset($values->drupagram_link) && !empty($values->drupagram_link)) {
       return l($image, $values->drupagram_link, array('html' => TRUE, 'attributes' => array('target' => '_blank', 'rel' => 'nofollow')));
     }
