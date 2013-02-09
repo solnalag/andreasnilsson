@@ -19,6 +19,7 @@ body {
   background-color: none;
   background: url('../images/light_wool.png') repeat scroll; //cycle
   font-family: 'Quattrocento', serif;
+  color: @dark;
 }
 
 #logo img {
@@ -120,8 +121,8 @@ li a.active {
     margin-bottom: 25px;
     border: 1px solid @border;
 
-    p {
-      color: @dark;
+    p:last-of-type {
+      margin-bottom: 0;
     }
   }
 
