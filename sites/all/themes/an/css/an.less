@@ -313,11 +313,18 @@ ul.primary {
 
   .views-row {
     border-bottom: 1px solid @border;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 
     .node img {
       float: left;
       padding-right: 15px;
+    }
+
+    &.views-row-first {
+
+      .node h2 {
+        margin-top: 0;
+      }
     }
   }
 
@@ -355,9 +362,9 @@ ul.primary {
   }
 }
 
-.node.view-mode-full {
+/*.node.view-mode-full {
   margin-bottom: 20px;
-}
+}*/
 
 //Comments
 #content {
@@ -421,6 +428,9 @@ ul.primary {
 #content a.feed-icon {
   background-image: none;
   text-decoration: none;
+  margin: 0;
+  height: auto;
+  width: auto;
 }
 
 #content ul.links.inline {
