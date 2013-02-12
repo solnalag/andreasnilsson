@@ -1,0 +1,186 @@
+{
+  "name": "",
+  "glyphs": [
+    {
+      "search": [
+        "google",
+        "plus"
+      ],
+      "code": 43,
+      "uid": "e566d3f1d24f22981f6552d5188e7265",
+      "css": "gplus",
+      "orig_css": "gplus",
+      "orig_code": 43,
+      "src": "zocial",
+      "from": 43
+    },
+    {
+      "search": [
+        "pinterest"
+      ],
+      "code": 49,
+      "uid": "799d6108751f684ac9d018983251a08f",
+      "css": "pinterest",
+      "orig_css": "pinterest",
+      "orig_code": 49,
+      "src": "zocial",
+      "from": 49
+    },
+    {
+      "search": [
+        "flickr"
+      ],
+      "code": 70,
+      "uid": "231eeeedfdda9dd5d03dc8d03060007d",
+      "css": "flickr",
+      "orig_css": "flickr",
+      "orig_code": 70,
+      "src": "zocial",
+      "from": 70
+    },
+    {
+      "search": [
+        "linkedin"
+      ],
+      "code": 76,
+      "uid": "cc4e62d1721c863fdc6944d2fd87521d",
+      "css": "linkedin",
+      "orig_css": "linkedin",
+      "orig_code": 76,
+      "src": "zocial",
+      "from": 76
+    },
+    {
+      "search": [
+        "rss"
+      ],
+      "code": 82,
+      "uid": "2a3192d0f8fe0c7cf959168e68eb16d8",
+      "css": "rss",
+      "orig_css": "rss",
+      "orig_code": 82,
+      "src": "zocial",
+      "from": 82
+    },
+    {
+      "search": [
+        "skype"
+      ],
+      "code": 83,
+      "uid": "1884ff7f89cc02840606d28f9bcf930a",
+      "css": "skype",
+      "orig_css": "skype",
+      "orig_code": 83,
+      "src": "zocial",
+      "from": 83
+    },
+    {
+      "search": [
+        "twitter"
+      ],
+      "code": 84,
+      "uid": "b1ec8e90c2c85cf0035849980a3789b3",
+      "css": "twitter-1",
+      "orig_css": "twitter",
+      "orig_code": 84,
+      "src": "zocial",
+      "from": 84
+    },
+    {
+      "search": [
+        "youtube"
+      ],
+      "code": 85,
+      "uid": "57a4f84c40a0c44d47387105f162a427",
+      "css": "youtube",
+      "orig_css": "youtube",
+      "orig_code": 85,
+      "src": "zocial",
+      "from": 85
+    },
+    {
+      "search": [
+        "vimeo"
+      ],
+      "code": 86,
+      "uid": "e47352cd4c5e069288b29a2c9ab9d305",
+      "css": "vimeo",
+      "orig_css": "vimeo",
+      "orig_code": 86,
+      "src": "zocial",
+      "from": 86
+    },
+    {
+      "search": [
+        "email"
+      ],
+      "code": 93,
+      "uid": "a58032f4aafd0eec54803075f5b320d4",
+      "css": "email",
+      "orig_css": "email",
+      "orig_code": 93,
+      "src": "zocial",
+      "from": 93
+    },
+    {
+      "search": [
+        "facebook"
+      ],
+      "code": 102,
+      "uid": "6f7586c6f99798c3c1de6123d1f6cfa9",
+      "css": "facebook-1",
+      "orig_css": "facebook",
+      "orig_code": 102,
+      "src": "zocial",
+      "from": 102
+    },
+    {
+      "search": [
+        "github"
+      ],
+      "code": 103,
+      "uid": "9bba5df43e4e9419975336161e1810c3",
+      "css": "github",
+      "orig_css": "github",
+      "orig_code": 103,
+      "src": "zocial",
+      "from": 103
+    },
+    {
+      "search": [
+        "itunes"
+      ],
+      "code": 105,
+      "uid": "d6096cb47cc4448ac68b6a2e2c52a81d",
+      "css": "itunes",
+      "orig_css": "itunes",
+      "orig_code": 105,
+      "src": "zocial",
+      "from": 105
+    },
+    {
+      "search": [
+        "instagram"
+      ],
+      "code": 220,
+      "uid": "6275b63473065457219b9e12024f95f2",
+      "css": "instagram",
+      "orig_css": "instagram",
+      "orig_code": 220,
+      "src": "zocial",
+      "from": 220
+    },
+    {
+      "search": [
+        "drupal"
+      ],
+      "code": 228,
+      "uid": "9794e9b767f192e0d499dfc98d52e802",
+      "css": "drupal",
+      "orig_css": "drupal",
+      "orig_code": 228,
+      "src": "zocial",
+      "from": 228
+    }
+  ]
+}
