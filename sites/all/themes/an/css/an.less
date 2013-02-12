@@ -314,6 +314,11 @@ ul.primary {
   .views-row {
     border-bottom: 1px solid @border;
     padding-bottom: 20px;
+
+    .node img {
+      float: left;
+      padding-right: 15px;
+    }
   }
 
   .views-row-last {
@@ -328,6 +333,11 @@ ul.primary {
   #content .node {
     border-bottom: 1px solid @border;
     padding-bottom: 30px;
+
+    img {
+      float: left;
+      padding-right: 15px;
+    }
     
     &:last-of-type {
       border-bottom: none;
@@ -339,10 +349,14 @@ ul.primary {
 // Search
 .page-search {
 
-  #content .node img{
+  #content .node img {
     float: left;
     padding-right: 15px;
   }
+}
+
+.node.view-mode-full {
+  margin-bottom: 20px;
 }
 
 //Comments
