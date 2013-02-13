@@ -63,60 +63,81 @@ pre {
   .rounded-corners();
 }
 
-#header {
+// Twitter feeds
+.custom-twitter-block,
+.footer-twitter-block {
 
-  .custom-twitter-block {
-    float: right;
-    width: 622px;
-    min-width: 622px;
 
-    .twitter-status {
-      width: 580px;
-      border: 1px solid @border;
-      padding: 20px 20px 0;
-      .rounded-corners();
+  .twitter-status {
 
-      a {
-        color: @titlelink;
+    a {
+      color: @titlelink;
+      text-decoration: none;
 
-        &:hover {
-          color: @dark;
-        }
-      }
-
-      .name-handle .name a {
-        text-decoration: none;
+      &:hover {
         color: @dark;
+        text-decoration: underline;
+      }
+    }
 
-        &:hover {
-          color: @titlelink;
-        }
+    .name-handle .name a {
+      text-decoration: none;
+      color: @dark;
+
+      &:hover {
+        color: @titlelink;
       }
     }
   }
-
-  /*.block-twitter-db {
-    float: right;
-    width: 600px;
-    padding: 20px 20px 0;
-    margin-top: 25px;
-    background: url('../images/twitter-c-64.png') no-repeat 0 6px;
-
-    .tweets {
-      padding-left: 50px;
-    }
-
-    ul {
-      height: 79px;
-
-      .created {
-        font-family: 'Wire One', sans-serif;
-        font-size: 20px;
-        color: @titlelink;
-      }
-    }
-  }*/
 }
+
+.custom-twitter-block {
+  float: right;
+  width: 622px;
+  min-width: 622px;
+
+  .twitter-status {
+    width: 580px;
+    border: 1px solid @border;
+    padding: 20px 20px 0;
+    .rounded-corners();
+  }
+}
+
+.footer-twitter-block {
+
+  .twitter-status {
+    background: none;
+
+    .name-handle .name a {
+      font-family: 'Wire One', sans-serif;
+      font-size: 50px;
+      font-weight: normal;
+    }
+  }
+}
+
+/*.block-twitter-db {
+  float: right;
+  width: 600px;
+  padding: 20px 20px 0;
+  margin-top: 25px;
+  background: url('../images/twitter-c-64.png') no-repeat 0 6px;
+
+  .tweets {
+    padding-left: 50px;
+  }
+
+  ul {
+    height: 79px;
+
+    .created {
+      font-family: 'Wire One', sans-serif;
+      font-size: 20px;
+      color: @titlelink;
+    }
+  }
+}*/
 
 /*#sidebar {
   a,
