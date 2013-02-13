@@ -9,7 +9,7 @@ function previous_get_node($nid) {
   
   if ($nid) {
   
-    $query = "SELECT nid FROM {node} WHERE nid < :nid ORDER BY nid DESC LIMIT 1";
+    $query = "SELECT nid FROM {node} WHERE nid < :nid AND status = 1 ORDER BY nid DESC LIMIT 1";
 
     $result = db_query($query, array(':nid' => $nid));
 
